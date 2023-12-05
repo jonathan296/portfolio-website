@@ -12,7 +12,8 @@ export default {
         }
       },
       fontFamily: {
-        Inter: "Inter"
+        Inter: "Inter",
+        Pixel: "Pixel"
       }
     },
   },

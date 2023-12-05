@@ -2,30 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
-    @font-face {
-        font-family: "Inter";
-        src: url('../fonts/Inter-Regular.ttf');
-    }
+  @font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-Regular.ttf");
+  }
+  @font-face{
+    font-family: "Pixel";
+    src: url("../fonts/PixelifySans-VariableFont_wght.ttf");
+  }
 }
 
 * {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-
-
-html{
-    font-size: 16px;
-   
-  
-    
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-#vanta{
-    width: 100vw;
-    height: 100vh;
-    
+#vanta {
+  width: 100vw;
+  height: 100vh;
+  position: fixed; /* Make the background fixed */
+  top: 0;
+  left: 0;
+  z-index: -1; /* Ensure it stays behind the content */
+  /* Other Vanta.js styles */
 }
+.content-container {
+  position: relative; /* Necessary for z-index to work */
+  z-index: 1; /* Ensure it's above the Vanta.js background */
+  /* Add styles for scrolling or layout as needed */
+}
+
+.active .nav-text {
+  --tw-text-opacity: 1;
+  color: rgb(226 232 240 / var(--tw-text-opacity));
+}
+.active .nav-indicator {
+  width: 4rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+}
+

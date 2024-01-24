@@ -16,6 +16,7 @@
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
 #vanta {
@@ -43,3 +44,6 @@
   background-color: rgb(226 232 240 / var(--tw-bg-opacity));
 }
 
+html{
+  font-size: 17px;
+}

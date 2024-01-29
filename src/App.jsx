@@ -66,7 +66,7 @@ function App() {
           scaleMobile: 1.0,
           spacing: 20.0,
           color: 0x3fbbff,
-          backgroundColor: 0x160d25
+          backgroundColor: 0xb3066,
         })
       );
     }
@@ -81,9 +81,9 @@ function App() {
   return (
     <div>
       <div ref={myRef} id="vanta"></div>
-      <div className="lg:flex lg:flex-row lg:justify-between lg:gap-4 mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-0 lg:py-0">
+      <div className="lg:flex lg:flex-row lg:justify-between lg:gap-4 mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-20 lg:py-0">
         {/**Header */}
-        <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-2/5 lg:flex-col lg:justify-between lg:py-24">
+        <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-2/5 lg:flex-col lg:justify-between lg:py-24 ">
           <div>
             <h1 className="text-3xl font-Pixel font-bold tracking-tight text-slate-200 sm:text-4xl">
               <a href="/">Jonathan Alvarenga</a>
@@ -120,6 +120,9 @@ function App() {
                 </a>
               </li>
             </ul>
+            <nav>
+              <ul></ul>
+            </nav>
             <nav className="hidden lg:block " aria-label="In-page jump links">
               <ul className="mt-16 w-60 rounded-sm text-slate-200">
                 <li>
@@ -222,12 +225,12 @@ function App() {
         {/**content container */}
         <div
           id="about"
-          className="pt-20 lg:w-3/5 lg:py-24 flex flex-col gap-6 sm:gap-10 lg:p-9"
+          className="pt-20 lg:w-3/5 lg:py-24 flex flex-col gap-6 sm:gap-10 lg:pl-9 "
         >
           {/**About Me */}
           <div
             ref={ref3}
-            className="rounded-lg text-slate-200 bg-slate-700 bg-opacity-25 p-3 shadow-md "
+            className="rounded-lg text-slate-200 bg-slate-700 bg-opacity-60 p-3 shadow-md "
           >
             <h1 className="font-Pixel text-2xl mb-3 ">About Me</h1>
             <div className="flex flex-row  align-center">
@@ -255,19 +258,25 @@ function App() {
           <span id="experience"></span>
           <div
             ref={ref2}
-            className="rounded-lg text-slate-200 outline-slate-200 bg-slate-600 bg-opacity-20 lg:p-3 lg:pb-60 p-3 "
+            className="bg-contain bg-center bg-no-repeat rounded-lg text-slate-200 outline-slate-200 bg-slate-600 bg-opacity-20 lg:p-3 lg:pb-60 p-3 "
           >
             <h1 className="font-Pixel text-2xl mb-3">Tools/Languages</h1>
             <div className="flex flex-row align-center">
               <div>
                 <div className="flex flex-wrap gap-4">
-                  <div className="bg-white shadow-lg rounded-xl w-[100px] h-[100px] flex flex-col justify-center items-center">
-                    <img className="h-20 w-20" src="\src\assets\react.svg" />
-                    <h2>React</h2>
+                  <div className="bg-black h-32 w-32 flex flex-col justify-center items-center">
+                    <img
+                      className="w-52"
+                      src="\Figma_pixel.png"
+                      style={{ imageRendering: "pixelated" }}
+                    />
                   </div>
-                  <div className="bg-white shadow-lg rounded-xl w-[100px] h-[100px] flex flex-col justify-center items-center">
-                    <img className="h-20 w-20" src="\src\assets\react.svg" />
-                    <h2>React</h2>
+                  <div className="shadow-lg rounded-xl h-32 w-32 flex flex-col justify-center items-center">
+                  <img
+                      className="w-52"
+                      src="\React_pixel.png"
+                      style={{ imageRendering: "pixelated" }}
+                    />
                   </div>
                   <div className="bg-white shadow-lg rounded-xl w-[100px] h-[100px] flex flex-col justify-center items-center">
                     <img className="h-20 w-20" src="\src\assets\react.svg" />

@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import { useRef } from "react";
 import useSound from "use-sound";
 import { useInView } from "react-intersection-observer";
-
+import Icons from "./Tools/Languages/Icons";
 function App() {
   const [vantaEffect, setVantaEffect] = useState(null);
   const [isAboutActive, setIsAboutActive] = useState(false);
@@ -261,38 +261,7 @@ function App() {
             className="bg-contain bg-center bg-no-repeat rounded-lg text-slate-200 outline-slate-200 bg-slate-600 bg-opacity-20 lg:p-3 lg:pb-60 p-3 "
           >
             <h1 className="font-Pixel text-2xl mb-3">Tools/Languages</h1>
-            <div className="flex flex-row align-center">
-              <div>
-                <div className="flex flex-wrap gap-4">
-                  <div className="bg-black h-32 w-32 flex flex-col justify-center items-center">
-                    <img
-                      className="w-52"
-                      src="\Figma_pixel.png"
-                      style={{ imageRendering: "pixelated" }}
-                    />
-                  </div>
-                  <div className="shadow-lg rounded-xl h-32 w-32 flex flex-col justify-center items-center">
-                  <img
-                      className="w-52"
-                      src="\React_pixel.png"
-                      style={{ imageRendering: "pixelated" }}
-                    />
-                  </div>
-                  <div className="bg-white shadow-lg rounded-xl w-[100px] h-[100px] flex flex-col justify-center items-center">
-                    <img className="h-20 w-20" src="\src\assets\react.svg" />
-                    <h2>React</h2>
-                  </div>
-                  <div className="bg-white shadow-lg rounded-xl w-[100px] h-[100px] flex flex-col justify-center items-center">
-                    <img className="h-20 w-20" src="\src\assets\react.svg" />
-                    <h2>React</h2>
-                  </div>
-                  <div className="bg-white shadow-lg rounded-xl w-[100px] h-[100px] flex flex-col justify-center items-center">
-                    <img className="h-20 w-20" src="\src\assets\react.svg" />
-                    <h2>React</h2>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <Icons></Icons>
           </div>
           {/**Projects */}
           <span id="projects"></span>

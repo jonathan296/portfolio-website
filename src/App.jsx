@@ -85,10 +85,10 @@ function App() {
         {/**Header */}
         <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-2/5 lg:flex-col lg:justify-between lg:py-24 ">
           <div>
-            <h1 className="text-3xl font-Pixel font-bold tracking-tight text-slate-200 sm:text-4xl">
+            <h1 className="text-3xl font-Pixel font-bold tracking-tight text-orange-500 sm:text-4xl drop-shadow-lg">
               <a href="/">Jonathan Alvarenga</a>
             </h1>
-            <h2 className="mt-3 text-xl font-Pixel font-medium tracking-tight text-slate-200 sm:text-2xl">
+            <h2 className="mt-3 text-xl font-Pixel font-medium tracking-tight text-slate-200 sm:text-2xl drop-shadow-lg">
               Full-Stack Engineer
             </h2>
 
@@ -98,7 +98,7 @@ function App() {
             >
               <li className="mr-5 text-xs">
                 <a
-                  className="block hover:text-slate-100 text-slate-300"
+                  className="block hover:text-slate-100 text-slate-300 drop-shadow-lg"
                   href="https://www.linkedin.com/in/jonathan-alvarenga/"
                   target="_blank"
                   rel="noreferrer"
@@ -110,7 +110,7 @@ function App() {
 
               <li className="mr-5 text-xs">
                 <a
-                  className="block hover:text-slate-100 text-slate-300"
+                  className="block hover:text-slate-100 text-slate-300 drop-shadow-lg"
                   href="https://github.com/jonathan296"
                   target="_blank"
                   rel="noreferrer"
@@ -120,9 +120,7 @@ function App() {
                 </a>
               </li>
             </ul>
-            <nav>
-              <ul></ul>
-            </nav>
+
             <nav className="hidden lg:block " aria-label="In-page jump links">
               <ul className="mt-16 w-60 rounded-sm text-slate-200">
                 <li>
@@ -144,12 +142,14 @@ function App() {
                     {isAboutActive && (
                       <img
                         src="/Sprite_Hand_Cursor.png"
-                        className="w-8 mr-2"
+                        className="w-8 mr-2 drop-shadow-lg"
                       ></img>
                     )}
                     <span
                       className={`transition-all  motion-reduce:transition-none font-Pixel text-2xl tracking-widest ${
-                        isAboutActive ? "text-slate-200" : "text-slate-500"
+                        isAboutActive
+                          ? "text-slate-200 drop-shadow-lg"
+                          : "text-slate-500"
                       } group-hover:text-slate-200 group-focus-visible:text-slate-200`}
                     >
                       About
@@ -175,12 +175,14 @@ function App() {
                     {isExpActive && (
                       <img
                         src="/Sprite_Hand_Cursor.png"
-                        className="w-8 mr-2"
+                        className="w-8 mr-2 drop-shadow-lg"
                       ></img>
                     )}
                     <span
                       className={`transition-all  motion-reduce:transition-none font-Pixel text-2xl tracking-widest ${
-                        isExpActive ? "text-slate-200" : "text-slate-500"
+                        isExpActive
+                          ? "text-slate-200 drop-shadow-lg"
+                          : "text-slate-500"
                       } group-hover:text-slate-200 group-focus-visible:text-slate-200`}
                     >
                       Experience
@@ -206,12 +208,14 @@ function App() {
                     {isActive && (
                       <img
                         src="/Sprite_Hand_Cursor.png"
-                        className="w-8 mr-2"
+                        className="w-8 mr-2 drop-shadow-lg"
                       ></img>
                     )}
                     <span
                       className={`transition-all  motion-reduce:transition-none font-Pixel text-2xl tracking-widest ${
-                        isActive ? "text-slate-200" : "text-slate-500"
+                        isActive
+                          ? "text-slate-200 drop-shadow-lg"
+                          : "text-slate-500"
                       } group-hover:text-slate-200 group-focus-visible:text-slate-200`}
                     >
                       Projects
@@ -225,17 +229,19 @@ function App() {
         {/**content container */}
         <div
           id="about"
-          className="pt-20 lg:w-3/5 lg:py-24 flex flex-col gap-6 sm:gap-10 lg:pl-9 "
+          className="pt-20 lg:w-3/5 lg:py-24 flex flex-col gap-6 sm:gap-9 lg:pl-9 "
         >
           {/**About Me */}
           <div
             ref={ref3}
-            className="rounded-lg text-slate-200 bg-slate-700 bg-opacity-60 p-3 shadow-md "
+            className="rounded-lg text-slate-200 bg-slate-700 bg-opacity-40 backdrop-blur p-3 shadow-xl "
           >
-            <h1 className="font-Pixel text-2xl mb-3 ">About Me</h1>
+            <h1 className="font-Pixel text-2xl mb-3 text-lime-400 drop-shadow-md">
+              About Me
+            </h1>
             <div className="flex flex-row  align-center">
               <div className="leading-7">
-                <p className="mb-3">
+                <p className="mb-3 drop-shadow-md">
                   Hey there, I'm Jonathan, a recent graduate of a full-stack web
                   development bootcamp, transitioning from a background in UX
                   research. I'm thrilled about diving into the world of web
@@ -243,7 +249,7 @@ function App() {
                   the creative potential inherent in web development and the
                   ability to transform ideas into immersive experiences.
                 </p>
-                <p className="mb-2">
+                <p className="mb-2 drop-shadow-md">
                   My primary goal is to gain extensive team-oriented experience
                   and expand my skill set further. I'm actively seeking
                   opportunities in collaborative environments to contribute
@@ -258,23 +264,35 @@ function App() {
           <span id="experience"></span>
           <div
             ref={ref2}
-            className="bg-contain bg-center bg-no-repeat rounded-lg text-slate-200 outline-slate-200 bg-slate-600 bg-opacity-20 lg:p-3 lg:pb-60 p-3 "
+            className="bg-contain bg-center bg-no-repeat rounded-lg text-slate-200 outline-slate-200 backdrop-blur bg-slate-700 shadow-xl bg-opacity-40 lg:p-3 lg:pb-3 p-3 "
           >
-            <h1 className="font-Pixel text-2xl mb-3">Tools/Languages</h1>
+            <h1 className="font-Pixel text-2xl mb-3 text-purple-400 drop-shadow-md">
+              Tools/Languages
+            </h1>
             <Icons></Icons>
           </div>
           {/**Projects */}
           <span id="projects"></span>
           <div
             ref={ref}
-            className="rounded-lg text-slate-200 bg-slate-600 bg-opacity-20 p-3"
+            className="rounded-lg text-slate-200 bg-slate-700 bg-opacity-40 backdrop-blur shadow-xl p-3"
           >
-            <h1 className="font-Pixel text-2xl mb-3">Projects</h1>
+            <h1 className="font-Pixel text-2xl mb-3 text-red-400 drop-shadow-md">
+              Projects
+            </h1>
             <div className="flex flex-col gap-4">
-              <div className="bg-red-500 w-56 h-44"></div>
-              <div className="bg-green-500 w-56 h-44"></div>
-              <div className="bg-purple-500 w-56 h-44"></div>
-              <div className="bg-red-500 w-56 h-44"></div>
+              <div className="w-56 ">
+                <img src="/MockImage.jpg"></img>
+              </div>
+              <div className=" w-56 ">
+                <img src="/MockTODO.jpg"></img>
+              </div>
+              <div className=" w-56">
+                <img src="/MockMAP.jpg"></img>
+              </div>
+              <div className="w-56">
+                <img src="/MockGAME.jpg"></img>
+              </div>
             </div>
           </div>
         </div>

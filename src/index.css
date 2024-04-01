@@ -47,3 +47,8 @@
 html{
   font-size: 17px;
 }
+
+figcaption{
+  font-size: 14px;
+  padding-top: 3px;
+}

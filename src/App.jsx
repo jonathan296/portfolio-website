@@ -240,7 +240,7 @@ function App() {
               About Me
             </h1>
             <div className="flex flex-row  align-center">
-              <div className="leading-7">
+              <div className="leading-6">
                 <p className="mb-3 drop-shadow-md">
                   Hey there, I'm Jonathan, a recent graduate of a full-stack web
                   development bootcamp, transitioning from a background in UX
@@ -264,7 +264,7 @@ function App() {
           <span id="experience"></span>
           <div
             ref={ref2}
-            className="bg-contain bg-center bg-no-repeat rounded-lg text-slate-200 outline-slate-200 backdrop-blur bg-slate-700 shadow-xl bg-opacity-40 lg:p-3 lg:pb-3 p-3 "
+            className="rounded-lg text-slate-200 outline-slate-200 backdrop-blur bg-slate-700 shadow-xl bg-opacity-40 lg:p-3 lg:pb-3 p-3 "
           >
             <h1 className="font-Pixel text-2xl mb-3 text-purple-400 drop-shadow-md">
               Tools/Languages

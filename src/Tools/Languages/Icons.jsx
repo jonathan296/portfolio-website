@@ -1,10 +1,10 @@
 function Icons() {
-  const iconSize = "sm:h-20 sm:w-20 h-16 w-16 drop-shadow-lg";
+  const iconSize = "sm:h-16 sm:w-16 h-16 w-16 drop-shadow-lg mb-2 ";
   return (
     <>
       <div>
-        <div className="m-1 mt-3.5">
-          <div className="grid grid-cols-3 sm:grid-cols-5 gap-4 text-[11px] sm:text-[14px] ">
+        <div className="m-1">
+          <div className="grid grid-cols-4 sm:grid-cols-4 gap-x-3 gap-y-7 text-[11px] sm:text-[14px]">
             <figure
               className={`flex flex-col justify-center items-center py-1`}
             >
@@ -53,24 +53,14 @@ function Icons() {
               <img className={iconSize} src="/Express.svg" />
               <figcaption>Express</figcaption>
             </figure>
-            <figure
-              className={`flex flex-col justify-center items-center py-1`}
-            >
-              <img className={iconSize} src="/git-plain.svg" />
-              <figcaption>Git</figcaption>
-            </figure>
+           
             <figure
               className={`flex flex-col justify-center items-center py-1`}
             >
               <img className={iconSize} src="/firebase-plain.svg" />
               <figcaption>Firebase</figcaption>
             </figure>
-            <figure
-              className={`flex flex-col justify-center items-center py-1`}
-            >
-              <img className={iconSize} src="/npm-original-wordmark.svg" />
-              <figcaption>npm</figcaption>
-            </figure>
+           
             <figure
               className={`flex flex-col justify-center items-center py-1`}
             >
@@ -89,12 +79,7 @@ function Icons() {
               <img className={iconSize} src="/Figma.svg" />
               <figcaption>Figma</figcaption>
             </figure>
-            <figure
-              className={`flex flex-col justify-center items-center py-1`}
-            >
-              <img className={iconSize} src="/Miro.svg" />
-              <figcaption>Miro</figcaption>
-            </figure>
+          
           </div>
         </div>
       </div>

@@ -81,7 +81,7 @@ function App() {
   return (
     <div>
       <div ref={myRef} id="vanta"></div>
-      <div className="lg:flex lg:flex-row lg:justify-between lg:gap-4 mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-20 lg:py-0">
+      <div className="lg:flex lg:flex-row lg:justify-between lg:gap-4 mx-auto min-h-screen max-w-[1450px] px-6 py-12 font-sans md:px-12 md:py-20 lg:px-12 lg:py-0">
         {/**Header */}
         <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-2/5 lg:flex-col lg:justify-between lg:py-24 ">
           <div>
@@ -229,48 +229,93 @@ function App() {
         {/**content container */}
         <div
           id="about"
-          className="pt-20 lg:w-3/5 lg:py-24 flex flex-col gap-6 sm:gap-9 lg:pl-9 "
+          className="pt-20 lg:w-[75%] lg:py-24 flex flex-col gap-5 sm:gap-8 lg:pl-9"
         >
           {/**About Me */}
+
           <div
             ref={ref3}
             className="rounded-lg text-slate-200 bg-slate-700 bg-opacity-40 backdrop-blur p-3 shadow-xl "
           >
-            <h1 className="font-Pixel text-2xl mb-3 text-lime-400 drop-shadow-md">
-              About Me
-            </h1>
-            <div className="flex flex-row  align-center">
-              <div className="leading-6">
-                <p className="mb-3 drop-shadow-md">
-                  Hey there, I'm Jonathan, a recent graduate of a full-stack web
-                  development bootcamp, transitioning from a background in UX
-                  research. I'm thrilled about diving into the world of web
-                  development after spending time in UX. What excites me most is
-                  the creative potential inherent in web development and the
-                  ability to transform ideas into immersive experiences.
-                </p>
-                <p className="mb-2 drop-shadow-md">
-                  My primary goal is to gain extensive team-oriented experience
-                  and expand my skill set further. I'm actively seeking
-                  opportunities in collaborative environments to contribute
-                  meaningfully and help craft exceptional digital solutions. If
-                  you're in need of a passionate web developer with a strong UX
-                  foundation let's connect!
-                </p>
+            <div className="">
+              <h1 className="font-Pixel text-2xl mb-3 text-lime-400 drop-shadow-md">
+                About Me
+              </h1>
+              <div className="gap-2">
+                <div className="leading-7">
+                  <p className="mb-3 drop-shadow-md">
+                    Hey there, I'm Jonathan, a recent graduate of a full-stack
+                    web development bootcamp, transitioning from a background in
+                    UX research. I'm thrilled about diving into the world of web
+                    development after spending time in UX. What excites me most
+                    is the creative potential inherent in web development and
+                    the ability to transform ideas into immersive experiences.
+                  </p>
+                  <p className="mb-2 drop-shadow-md">
+                    My primary goal is to gain extensive team-oriented
+                    experience and expand my skill set further. I'm actively
+                    seeking opportunities in collaborative environments to
+                    contribute meaningfully and help craft exceptional digital
+                    solutions. If you're in need of a passionate web developer
+                    with a strong UX foundation let's connect!
+                  </p>
+                </div>
               </div>
             </div>
           </div>
           {/**skills */}
           <span id="experience"></span>
-          <div
-            ref={ref2}
-            className="rounded-lg text-slate-200 outline-slate-200 backdrop-blur bg-slate-700 shadow-xl bg-opacity-40 lg:p-3 lg:pb-3 p-3 "
-          >
-            <h1 className="font-Pixel text-2xl mb-3 text-purple-400 drop-shadow-md">
-              Tools/Languages
-            </h1>
-            <Icons></Icons>
+          <div className="sm:grid sm:grid-cols-2 flex flex-col sm:gap-5 gap-9">
+            
+            <div
+              ref={ref2}
+              className="rounded-lg text-slate-200 outline-slate-200 backdrop-blur bg-slate-700 shadow-xl bg-opacity-40 lg:p-3 lg:pb-3 p-3  "
+            >
+              <h1 className="font-Pixel text-2xl mb-3 text-purple-400 drop-shadow-md">
+                Experience
+              </h1>
+              <div className="m-1">
+                
+                  <ul className="list-disc list-inside grid gap-y-10">
+                    <li className="">
+                      Full-Stack Acadamy
+                      <p className="ml-6 text-xs">
+                        STUDENT FEB 2023 - NOV 2023
+                      </p>
+                    </li>
+                    <li className="">
+                      Amazon
+                      <p className="ml-6 text-sm">
+                        STUDENT FEB 2023 - NOV 2023
+                      </p>
+                    </li>
+                    <li className="">
+                      Workday
+                      <p className="ml-6 text-sm">
+                        STUDENT FEB 2023 - NOV 2023
+                      </p>
+                    </li>
+                    <li className="">
+                      Year Up
+                      <p className="ml-6 text-sm">
+                        STUDENT FEB 2023 - NOV 2023
+                      </p>
+                    </li>
+                  </ul>
+                
+              </div>
+            </div>
+            <div
+              ref={ref2}
+              className="rounded-lg text-slate-200 outline-slate-200 backdrop-blur bg-slate-700 shadow-xl bg-opacity-40 lg:p-3 lg:pb-3 p-3  "
+            >
+              <h1 className="font-Pixel text-2xl mb-3 text-yellow-400 drop-shadow-md">
+                Languages/Tools
+              </h1>
+              <Icons></Icons>
+            </div>
           </div>
+
           {/**Projects */}
           <span id="projects"></span>
           <div

@@ -1,10 +1,10 @@
 function Icons() {
-  const iconSize = "sm:h-16 sm:w-16 h-16 w-16 drop-shadow-lg mb-2 ";
+  const iconSize = "sm:h-16 sm:w-16 h-16 w-16 drop-shadow-lg mb-1 ";
   return (
     <>
       <div>
         <div className="m-1">
-          <div className="grid grid-cols-4 sm:grid-cols-4 gap-x-3 gap-y-7 text-[11px] sm:text-[14px]">
+          <div className="grid grid-cols-4 sm:grid-cols-4 gap-x-3 gap-y-5 text-[11px] sm:text-[14px]">
             <figure
               className={`flex flex-col justify-center items-center py-1`}
             >

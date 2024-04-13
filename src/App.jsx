@@ -17,7 +17,7 @@ function App() {
   const [play] = useSound("/ff-select.mp3", { volume: 0.7 });
 
   const [ref, inView] = useInView({
-    threshold: 0.7, // Adjust threshold as needed
+    threshold: 1, // Adjust threshold as needed
     triggerOnce: false, // Trigger only once when the element enters the viewport
   });
   useEffect(() => {
@@ -81,7 +81,7 @@ function App() {
   return (
     <div>
       <div ref={myRef} id="vanta"></div>
-      <div className="lg:flex lg:flex-row lg:justify-between lg:gap-4 mx-auto min-h-screen max-w-[1450px] px-6 py-12 font-sans md:px-12 md:py-20 lg:px-12 lg:py-0">
+      <div className="lg:flex lg:flex-row lg:justify-between lg:gap-4 mx-auto min-h-screen lg:max-w-[1450px] px-6 py-12 font-sans md:px-12 md:py-20 lg:px-20 lg:py-0">
         {/**Header */}
         <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-2/5 lg:flex-col lg:justify-between lg:py-24 ">
           <div>
@@ -229,7 +229,7 @@ function App() {
         {/**content container */}
         <div
           id="about"
-          className="pt-20 lg:w-[75%] lg:py-24 flex flex-col gap-5 sm:gap-8 lg:pl-9"
+          className="pt-20 lg:w-[75%] lg:py-24 flex flex-col gap-5 sm:gap-8 lg:pl-8"
         >
           {/**About Me */}
 
@@ -242,8 +242,8 @@ function App() {
                 About Me
               </h1>
               <div className="gap-2">
-                <div className="leading-7">
-                  <p className="mb-3 drop-shadow-md">
+                <div className="leading-relaxed">
+                  <p className="mb-4 drop-shadow-md">
                     Hey there, I'm Jonathan, a recent graduate of a full-stack
                     web development bootcamp, transitioning from a background in
                     UX research. I'm thrilled about diving into the world of web
@@ -265,49 +265,49 @@ function App() {
           </div>
           {/**skills */}
           <span id="experience"></span>
-          <div className="sm:grid sm:grid-cols-2 flex flex-col sm:gap-5 gap-9">
-            
+          <div className="sm:grid sm:grid-cols-7 flex flex-col sm:gap-8 gap-9">
             <div
               ref={ref2}
-              className="rounded-lg text-slate-200 outline-slate-200 backdrop-blur bg-slate-700 shadow-xl bg-opacity-40 lg:p-3 lg:pb-3 p-3  "
+              className=" col-span-3 rounded-lg text-slate-200 outline-slate-200 backdrop-blur bg-slate-700 shadow-xl bg-opacity-40 lg:p-3 lg:pb-3 p-3  "
             >
               <h1 className="font-Pixel text-2xl mb-3 text-purple-400 drop-shadow-md">
                 Experience
               </h1>
-              <div className="m-1">
-                
-                  <ul className="list-disc list-inside grid gap-y-10">
-                    <li className="">
-                      Full-Stack Acadamy
-                      <p className="ml-6 text-xs">
-                        STUDENT FEB 2023 - NOV 2023
-                      </p>
-                    </li>
-                    <li className="">
-                      Amazon
-                      <p className="ml-6 text-sm">
-                        STUDENT FEB 2023 - NOV 2023
-                      </p>
-                    </li>
-                    <li className="">
-                      Workday
-                      <p className="ml-6 text-sm">
-                        STUDENT FEB 2023 - NOV 2023
-                      </p>
-                    </li>
-                    <li className="">
-                      Year Up
-                      <p className="ml-6 text-sm">
-                        STUDENT FEB 2023 - NOV 2023
-                      </p>
-                    </li>
-                  </ul>
-                
+              <div className="m-1 pb-2 flex flex-col gap-7">
+                  <div className="flex items-center">
+                    <img src="/fullstacklogo.jpg" className="h-16 w-16"></img>
+                    <div className="ml-2">
+                      <p className="">Fullstack Academy </p>
+                      <p className="text-xs">STUDENT <br/> FEB 2023 - NOV 2023</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center">
+                    <img src="/AmazonLogo.jpg" className="h-16 w-16"></img>
+                    <div className="ml-2">
+                      <p className="">Amazon</p>
+                      <p className="text-xs">WAREHOUSE ASSOCIATE <br/> OCT 2022 - NOV 2023</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center">
+                    <img src="/WorkdayLogo.png" className="h-16 w-16"></img>
+                    <div className="ml-2">
+                      <p className="col-span-2">Workday</p>
+                      <p className="text-xs">ASSOCIATE UX RESEARCHER<br/> JAN 2020 - DEC 2021</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center">
+                    <img src="/YearUpLogo.jpg" className="h-16 w-16"></img>
+                    <div className="ml-2">
+                      <p className="">YearUp</p>
+                      <p className="text-xs">TRAINEE <br/> JUN 2019-JUL 2020</p>
+                    </div>
+                  </div>
               </div>
             </div>
             <div
               ref={ref2}
-              className="rounded-lg text-slate-200 outline-slate-200 backdrop-blur bg-slate-700 shadow-xl bg-opacity-40 lg:p-3 lg:pb-3 p-3  "
+              className="col-span-4 rounded-lg text-slate-200 outline-slate-200 backdrop-blur bg-slate-700 shadow-xl bg-opacity-40 lg:p-3 lg:pb-3 p-3  "
             >
               <h1 className="font-Pixel text-2xl mb-3 text-yellow-400 drop-shadow-md">
                 Languages/Tools
@@ -320,19 +320,20 @@ function App() {
           <span id="projects"></span>
           <div
             ref={ref}
-            className="rounded-lg text-slate-200 bg-slate-700 bg-opacity-40 backdrop-blur shadow-xl p-3"
+            className="rounded-lg text-slate-200 bg-slate-700 bg-opacity-40 backdrop-blur shadow-xl p-3 "
           >
             <h1 className="font-Pixel text-2xl mb-3 text-red-400 drop-shadow-md">
               Projects
             </h1>
-            <div className="flex flex-col gap-4">
+
+            <div className="grid gap-7 justify-items-center ">
               <div className="w-56 ">
                 <img src="/MockImage.jpg"></img>
               </div>
-              <div className=" w-56 ">
+              <div className=" w-56">
                 <img src="/MockTODO.jpg"></img>
               </div>
-              <div className=" w-56">
+              <div className="w-56">
                 <img src="/MockMAP.jpg"></img>
               </div>
               <div className="w-56">

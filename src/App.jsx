@@ -326,9 +326,14 @@ function App() {
               Projects
             </h1>
 
-            <div className="grid gap-7 justify-items-center ">
-              <div className="w-56 ">
-                <img src="/MockImage.jpg"></img>
+            <div className="grid gap-7 justify-items-start">
+              <div className="flex">
+                <img src="/MockImage.jpg" className="w-56"></img>
+                <div className="flex flex-col">
+                  <a href="https://mymediadb.netlify.app/">Deployed Link</a>
+                  <a href="https://github.com/jonathan296/react-movie-db">Github Link</a>
+                </div>
+                
               </div>
               <div className=" w-56">
                 <img src="/MockTODO.jpg"></img>

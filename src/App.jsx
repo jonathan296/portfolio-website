@@ -333,14 +333,19 @@ function App() {
                   <a href="https://mymediadb.netlify.app/">Deployed Link</a>
                   <a href="https://github.com/jonathan296/react-movie-db">Github Link</a>
                 </div>
-                
               </div>
-              <div className=" w-56">
-                <img src="/MockTODO.jpg"></img>
+              <div className="flex">
+                <img src="/FakeStoreThumb.png" className="w-56"></img>
+                <div className="flex flex-col">
+                  <a href="https://fakereactstore.netlify.app/">Deployed Link</a>
+                  <a href="https://github.com/jonathan296/capstone2">Github Link</a>
+                </div>
               </div>
+              
               <div className="w-56">
                 <img src="/MockMAP.jpg"></img>
               </div>
+              
               <div className="w-56">
                 <img src="/MockGAME.jpg"></img>
               </div>

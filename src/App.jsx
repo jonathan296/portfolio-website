@@ -328,12 +328,21 @@ function App() {
 
             <div className="grid gap-7 justify-items-start">
               <div className="flex">
+                <img src="/ticTacToe.png" className="w-56"></img>
+                <div className="flex flex-col">
+                  <a href="https://mymediadb.netlify.app/">Deployed Link</a>
+                  <a href="https://github.com/jonathan296/tic-tac-toe-react">Github Link</a>
+                </div>
+              </div>
+              <div className="flex">
                 <img src="/MockImage.jpg" className="w-56"></img>
                 <div className="flex flex-col">
                   <a href="https://mymediadb.netlify.app/">Deployed Link</a>
                   <a href="https://github.com/jonathan296/react-movie-db">Github Link</a>
                 </div>
               </div>
+
+
               <div className="flex">
                 <img src="/FakeStoreThumb.png" className="w-56"></img>
                 <div className="flex flex-col">
@@ -342,13 +351,8 @@ function App() {
                 </div>
               </div>
               
-              <div className="w-56">
-                <img src="/MockMAP.jpg"></img>
-              </div>
               
-              <div className="w-56">
-                <img src="/MockGAME.jpg"></img>
-              </div>
+              
             </div>
           </div>
         </div>

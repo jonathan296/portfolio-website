@@ -328,15 +328,17 @@ function App() {
 
             <div className="grid gap-7 justify-items-start">
               <div className="flex">
-                <img src="/ticTacToe.png" className="w-56"></img>
+                <img src="/ticTacToe.png" className="w-56 mr-4"></img>
                 <div className="flex flex-col">
+                  <h1 className="text-2xl font-semibold">Tic-Tac-Toe</h1>
                   <a href="https://mymediadb.netlify.app/">Deployed Link</a>
                   <a href="https://github.com/jonathan296/tic-tac-toe-react">Github Link</a>
                 </div>
               </div>
               <div className="flex">
-                <img src="/MockImage.jpg" className="w-56"></img>
+                <img src="/MockImage.jpg" className="w-56 mr-4"></img>
                 <div className="flex flex-col">
+                  <h1 className="text-2xl font-semibold">Movie Trailer Database</h1>
                   <a href="https://mymediadb.netlify.app/">Deployed Link</a>
                   <a href="https://github.com/jonathan296/react-movie-db">Github Link</a>
                 </div>
@@ -344,8 +346,9 @@ function App() {
 
 
               <div className="flex">
-                <img src="/FakeStoreThumb.png" className="w-56"></img>
+                <img src="/FakeStoreThumb.png" className="w-56 mr-4"></img>
                 <div className="flex flex-col">
+                  <h1 className="text-2xl font-semibold">FakeStore</h1>
                   <a href="https://fakereactstore.netlify.app/">Deployed Link</a>
                   <a href="https://github.com/jonathan296/capstone2">Github Link</a>
                 </div>

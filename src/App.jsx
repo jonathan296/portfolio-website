@@ -327,34 +327,41 @@ function App() {
             </h1>
 
             <div className="grid gap-7 justify-items-start">
-              <div className="flex">
-                <img src="/ticTacToe.png" className="w-56 mr-4"></img>
+            <div className="flex sm:flex-row flex-col">
+                <img src="/reactnews.png" className="sm:w-56 sm:mr-4 mb-2"></img>
+                <div className="flex flex-col">
+                  <h1 className="text-2xl font-semibold">News Home Page</h1>
+                  <a href="https://reactnewslanding.netlify.app/">Deployed Link</a>
+                  <a href="https://github.com/jonathan296/news-homepage">Github Link</a>
+                </div>
+              </div>
+              <div className="flex sm:flex-row flex-col">
+                <img src="/ticTacToe.png" className="sm:w-56 sm:mr-4 mb-2"></img>
                 <div className="flex flex-col">
                   <h1 className="text-2xl font-semibold">Tic-Tac-Toe</h1>
-                  <a href="https://mymediadb.netlify.app/">Deployed Link</a>
+                  <a href="https://ticreact-toe.netlify.app/">Deployed Link</a>
                   <a href="https://github.com/jonathan296/tic-tac-toe-react">Github Link</a>
                 </div>
               </div>
-              <div className="flex">
-                <img src="/MockImage.jpg" className="w-56 mr-4"></img>
+              <div className="flex sm:flex-row flex-col">
+                <img src="/MockImage.jpg" className="sm:w-56 sm:mr-4 mb-2"></img>
                 <div className="flex flex-col">
                   <h1 className="text-2xl font-semibold">Movie Trailer Database</h1>
+                  <h2 className="text-lg font-bold text-green-400">(In Progress)</h2>
                   <a href="https://mymediadb.netlify.app/">Deployed Link</a>
                   <a href="https://github.com/jonathan296/react-movie-db">Github Link</a>
                 </div>
               </div>
 
 
-              <div className="flex">
-                <img src="/FakeStoreThumb.png" className="w-56 mr-4"></img>
+              <div className="flex sm:flex-row flex-col">
+                <img src="/FakeStoreThumb.png" className="sm:w-56 sm:mr-4 mb-2"></img>
                 <div className="flex flex-col">
                   <h1 className="text-2xl font-semibold">FakeStore</h1>
                   <a href="https://fakereactstore.netlify.app/">Deployed Link</a>
                   <a href="https://github.com/jonathan296/capstone2">Github Link</a>
                 </div>
               </div>
-              
-              
               
             </div>
           </div>
